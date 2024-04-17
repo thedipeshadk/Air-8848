@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/package.css" />
+    <link rel="stylesheet" href="../style/responsive.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Header container for logao and signup -->
+      <div class="header-container">
+        <header>
+          <nav class="navigation">
+            <ul>
+              <li>
+                <img src="../img/logo.png" alt="air8848 logo" class="logo" />
+              </li>
+              <li class="booking">
+                <input
+                  type="search"
+                  name="pick-up"
+                  id="pick-up"
+                  class=""
+                  placeholder="Search your destination"
+                />
+                <label for="pick-up"
+                  ><button>
+                    <ion-icon
+                      name="search-outline"
+                      class="ion-icon"
+                    ></ion-icon></button
+                ></label>
+              </li>
+
+              <li>
+                <a href="https://google.com" class="btn" id="login-btn">
+                  <ion-icon name="person-outline"></ion-icon
+                  ><span>Sign Up</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="categories">
+              <ul id="categoryList">
+                <li class="">
+                  <a href="#adventure-head" class="category category1">
+                    <div class="category-img category-img1"><!--img--></div>
+                    <p class="category-details">Adventure</p>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#beach-head" class="category category2">
+                    <div class="category-img category-img2"><!--img--></div>
+                    <p class="category-details">Beach</p>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="#religion" class="category category3">
+                    <div class="category-img category-img3"><!--img--></div>
+                    <p class="category-details">Religion</p>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#" class="category category4">
+                    <div class="category-img category-img4"><!--img--></div>
+                    <p class="category-details">Cultural</p>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#" class="category category5">
+                    <div class="category-img category-img5"><!--img--></div>
+                    <p class="category-details">Urban</p>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="#wildlife" class="category category6">
+                    <div class="category-img category-img6"><!--img--></div>
+                    <p class="category-details">Wildlife</p>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a href="#" class="category category7">
+                    <div class="category-img category-img7"><!--img--></div>
+                    <p class="category-details">Eco-Tourism</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <!-- Hero section for the photo and side-nav -->
+
+      <div class="hero-section" id="hero-pakage">
+        <aside class="side-nav">
+          <ul class="first-nav">
+            <li class="side-nav-li">
+              <button id="toggleButton">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="home-outline"></ion-icon>
+              <span><a href="../index.html">Home</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="archive-outline"></ion-icon>
+              <span><a href="abc.html">Packages</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="id-card-outline"></ion-icon>
+              <span><a href="aboutus.html">About Us</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="call-outline"></ion-icon
+              ><span><a href="contact.html">Contact</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="images-outline"></ion-icon>
+              <span><a href="error.html">Gallery</a></span>
+            </li>
+          </ul>
+
+          <ul class="second-nav first-nav">
+            <li class="h-bar"></li>
+            <li class="side-nav-li">
+              <ion-icon name="time-outline"></ion-icon>
+              <span><a href="error.html">History</a></span>
+            </li>
+
+            <li class="side-nav-li">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span><a href="error.html">Explore</a></span>
+            </li>
+            <li class="side-nav-li" id="Wishlist">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span><a href="error.html">Wishlist</a></span>
+            </li>
+
+            <li style="border: 1px solid #999"></li>
+            <li class="side-nav-li">
+              <ion-icon name="finger-print-outline"></ion-icon>
+              <span><a href="error.html"> Data</a></span>
+            </li>
+
+            <li class="side-nav-li">
+              <ion-icon name="settings-outline"></ion-icon>
+              <span><a href="error.html">Setting</a></span>
+            </li>
+          </ul>
+        </aside>
+        <div class="whole-package">
+          <div class="hero-pkg">
+            <div class="each-catagory">
+              <h3 class="tertiary-header travel-p" id="adventure-head">
+                Feel the thunder!
+              </h3>
+              <div id="adventure" class="pkg-category">
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-1"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Moab, Utah, USA</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating">7.7</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Very Good</p>
+                          <p>1001 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-left">
+                          <p>Location</p>
+                          <p>USA</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$321</p>
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-2"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">W Trek, Chile</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating">8.7</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>2222 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>Chile</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$421</p>
+
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-3"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Mardi himal, Непал</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐⭐</p>
+                          <span class="package-rating">9.7</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>855 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>Nepal</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$399</p>
+
+                      <p class="p-p-items">Flight + Hotel</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="each-catagory">
+              <h3 class="tertiary-header travel-p" id="beach-head">
+                Chills in the air!
+              </h3>
+              <div id="beach" class="pkg-category">
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-4"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">
+                        Perhentian Islands, Malaysia
+                      </h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating">7.8</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>823 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-left">
+                          <p>Location</p>
+                          <p>Malaysia</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$381</p>
+
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-5"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Miami Beach, Florida</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating p">7.7</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>883 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>Florida</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$390</p>
+
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-6"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Soufriere, Saint Lucia</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐⭐</p>
+                          <span class="package-rating">8.7</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>844 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>Saint Lucia</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$344</p>
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="each-catagory">
+              <h3 class="tertiary-header travel-p" id="religion-head">
+                Hari Bol!!!
+              </h3>
+              <div id="religion" class="pkg-category">
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-7"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Vrindhavan, India</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐⭐</p>
+                          <span class="package-rating">10</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>1111 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-left">
+                          <p>Location</p>
+                          <p>India</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$456</p>
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-8"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Lumbini, Nepal</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating p">7.7</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Very Good</p>
+                          <p>775 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>Nepal</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$222</p>
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-9"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Mecca, Saudi Arabia</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating">8.8</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>822 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>Saudi Arabia</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$321</p>
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="each-catagory">
+              <h3 class="tertiary-header travel-p" id="wildlife-head">
+                Into the woods!
+              </h3>
+              <div id="wildlife" class="pkg-category">
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-10"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Chitwan NP, Nepal</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐⭐</p>
+                          <span class="package-rating">9.9</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>888 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-left">
+                          <p>Location</p>
+                          <p>Nepal</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$231</p>
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-11"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">
+                        Amazon Rainforest, South America
+                      </h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating p">10</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>883 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>South America</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$321</p>
+                      <p class="p-p-items">Flight + Hotel</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="package-container-main">
+                  <div class="package-container">
+                    <div class="package-img package-img-12"><!-- img --></div>
+                    <div class="package-details padding-small">
+                      <h2 class="secondary-heading">Toronto Zoo, Canada</h2>
+                      <div class="p-d">
+                        <div class="p-d-right">
+                          <p>⭐⭐⭐⭐</p>
+                          <span class="package-rating">8.8</span>
+                        </div>
+                        <div class="p-d-middle">
+                          <p>Excellent</p>
+                          <p>1122 <span> reviews</span></p>
+                        </div>
+                        <div class="p-d-right">
+                          <p>Location</p>
+                          <p>Toronto</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="package-pricing padding-small">
+                      <p class="p-p-pricing bold">C$444</p>
+                      <p class="p-p-items">Flight</p>
+                      <p class="p-p-partner bold">eDreams</p>
+                      <a href="#" class="btn">View Detail</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="" id="ad-container">
+            <h3 class="weekly-special tertiary-header" id="heading-3">
+              This week's special
+            </h3>
+            <h4 class="each-ad-header" id="tertiary-heading">
+              Glow your spirit
+            </h4>
+            <div class="glow-spirit ad">
+              <div class="each-ad place-container">
+                <div class="p-img">
+                  <img
+                    src="/img/package-img/raimond-klavins-xAqrT-279UA-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="small-pad">
+                  <h3>Mardi Himal, Nepal</h3>
+                  <p>from C$ 233</p>
+                </div>
+              </div>
+
+              <div class="each-ad place-container">
+                <div class="p-img">
+                  <img src="/img/portfolio/angkor wat.jpg" alt="" />
+                </div>
+                <div class="small-pad">
+                  <h3>Angkor Wat, Cambodia</h3>
+                  <p>from C$ 233</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="each-ad-header" id="tertiary-heading">
+              Welcome the summer
+            </h3>
+            <div class="welcome-summer ad">
+              <div class="each-ad place-container">
+                <div class="p-img">
+                  <img
+                    src="/img/package-img/germine-sealy-qKvWD7NCVvM-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="small-pad">
+                  <h3>Soufriere, Saint Lucia</h3>
+                  <p>from C$ 233</p>
+                </div>
+              </div>
+
+              <div class="each-ad place-container">
+                <div class="p-img">
+                  <img
+                    src="/img/package-img/perry-kibler-X41O9TMInoU-unsplash.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="small-pad">
+                  <h3>Moab, Utah, USA</h3>
+                  <p>from C$ 233</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <!-- Content in the hero section -->
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Omnifood logo" src="../img/logo.png" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2024</span> by Air8848, Inc. All
+            rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@air8848.com.com"
+                >hello@air8848.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Flight partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Booking directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/script-common.js"></script>
+  </body>
+</html>
