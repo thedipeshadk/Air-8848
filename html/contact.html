@@ -161,5 +161,19 @@
         <div class="emoji">🛫</div>
       </div>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var contactForm = document.getElementById("contact-form");
+
+      contactForm.addEventListener("submit", function (event) {
+        // Prevent form submission
+        event.preventDefault();
+        // Redirect to thankyou.html after 3 seconds
+        setTimeout(function () {
+          window.location.href = "thankyou.html";
+        }, 1000);
+      });
+    });
+  </script>
 
 </html>
