@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url("https://images.unsplash.com/photo-1499063078284-f78f7d89616a?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")
+          no-repeat center center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: relative;
+      }
+      .container {
+        max-width: 400px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+        animation: bounceIn 1s ease-out;
+        position: relative;
+        z-index: 1;
+      }
+      @keyframes bounceIn {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      h1 {
+        text-align: center;
+        color: #2980b9;
+        margin-bottom: 20px;
+      }
+      form {
+        margin-top: 20px;
+        position: relative;
+        z-index: 2;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+        transition: border-color 0.3s ease;
+      }
+      input[type="text"]:focus,
+      textarea:focus {
+        border-color: #2980b9;
+      }
+      textarea {
+        height: 150px;
+      }
+      input[type="submit"] {
+        background-color: #2980b9;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      input[type="submit"]:hover {
+        background-color: #2c3e50;
+      }
+      .emoji-container {
+        position: absolute;
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
+        animation: revolveEmoji 10s linear infinite;
+      }
+      .emoji {
+        font-size: 40px;
+      }
+      @keyframes revolveEmoji {
+        0% {
+          transform: rotate(0deg) translateX(300px) rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg) translateX(300px) rotate(-180deg);
+        }
+        100% {
+          transform: rotate(360deg) translateX(300px) rotate(-360deg);
+        }
+      }
+
+      .home-link {
+        margin-top: 1.4rem;
+        display: block;
+        text-align: center;
+        background-color: #2980b9;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .home-link:hover {
+        background-color: #2c3e50;
+      }
+    </style>
+  </head>
+  <body>
+    
+  </body>
+
+</html>
