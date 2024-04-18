@@ -206,3 +206,70 @@ html {
         gap: .8rem;
         border-left: 1px solid #999;
     }
+
+    /* ******************************************************************************************* */
+/* *************************************AD CONTAINER *********************************** */
+.whole-package {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 10px;
+}
+
+#ad-container {
+
+    margin: 18rem 2rem 5rem 0;
+    height: auto;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+#ad-container .p-img {
+    border-radius: 0;
+}
+
+#ad-container  .place-container:hover img {
+    transform: none;
+
+}
+
+#ad-container .place-container {
+    border-radius: 0;
+}
+
+.weekly-special::before {
+    position: absolute;
+    top: 14px;
+    left: -53px;
+    content: "OFFER";
+    font-size: 16px;
+    color: orange;
+    background-color: yellow;
+    rotate: -45deg;
+    padding: 0 50px;
+}
+
+
+.tertiary-header{
+    /* font-size: 4.6rem; */
+    /* text-align: center; */
+    margin-top: 1rem;
+    /* color: black; */
+}
+
+.weekly-special {
+    margin-top: 6rem;
+}
+
+
+.each-ad {
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 2rem 1rem;
+    background-color: #4bcefa1e;
+}
+
+.each-ad-header {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 4.2rem;
+}
