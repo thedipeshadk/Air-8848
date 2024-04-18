@@ -384,3 +384,79 @@ html {
 .side-nav:hover li {
     gap: 1rem;
 }
+
+
+/**********************************************************************/
+/****************HERO SECTION***********************************/
+.right-div {
+    padding-left: 11.6rem;
+
+}
+
+.hero-details {
+    margin-top: 10rem;
+    padding: 11.2rem 5.2rem 0 11.6rem;
+    height: 99vh;
+    width: auto;
+
+    /* z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px; */
+
+    background-image: url(/img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-desc {
+    /* display: flex;
+    flex-direction: column;
+    gap: 1.6rem; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2.6rem;
+    row-gap: 4rem;
+
+    align-items: center;
+
+    justify-self: center;
+
+    /* width: 50%; */
+}
+
+
+
+.hero-details p {
+    font-size: 1.6rem;
+
+}
+
+.hero-img img {
+    width: 100%;
+
+}
+
+.cta {
+    font-size: 1.8rem;
+    margin-top: 8rem;
+}
+
+.cta a:first-child {
+    margin-right: 1.2rem;
+    margin-bottom: 12px;
+}
+
+.l-more {
+    background-color: white;
+   
+    /* border: 1px solid black; */
+}
+
+.l-more:hover {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
