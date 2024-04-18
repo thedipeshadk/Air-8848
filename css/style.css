@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    /* position: relative; */
+    
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+.main-container {
+    /* padding: 0 1.6rem; */
+    /* background-color: aquamarine; */
+    /* width: 100vw; */
+    height: auto;
+
+}
