@@ -273,3 +273,38 @@ html {
     text-align: center;
     margin-top: 4.2rem;
 }
+
+/* ******************************************************************************************* */
+/* *************************************GENERAL STYLES *********************************** */
+.margin-small {
+    margin: 1rem;
+}
+
+.padding-small {
+   padding: 1rem;
+}
+
+.btn, .btn:active {
+   display: inline-block;
+   /* width: 12.8rem; */
+   text-align: center;
+   border-radius: 5px;
+   text-decoration: none;
+   color: #666;
+   padding: 1rem 1.6rem;
+   background-color:#4bcffa;
+   transition: all .2s ;
+}
+
+.btn:hover, .btn:active {
+  background-color: #6fd9fb; 
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.secondary-heading {
+    margin-bottom: 1.2rem;
+}
+
