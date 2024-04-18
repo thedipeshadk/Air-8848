@@ -279,3 +279,108 @@ html {
        /* display: flex !important;  Override the display property to show the list */
        width: 15rem !important;
     }
+
+    /* *********************************************************** */
+/************************* Side Nav******************************/
+.hero-section {
+    display: flex;
+    gap: 2rem;
+
+    height: 100%;
+}
+
+.side-nav {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 51px;
+    background-color: white;
+    transition: width .4s ;
+    z-index: 999;
+    border-right: 2px solid rgba(84, 79, 79, 0.337);
+
+    overflow: hidden;
+    position: fixed;
+    height: calc(100vh);
+    top: calc(16.92rem );
+}
+
+
+
+.side-nav:hover {
+    width: 15rem;
+}
+.second-nav {
+    margin-top: 1rem;
+    border-top: 1px solid #666;
+}
+
+.side-nav > ul {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.6rem;
+}
+
+.side-nav-li {
+    padding-left: 10px;
+}
+
+.side-nav-li:hover ion-icon {
+    color: #4bcffa;
+}
+.side-nav-li span {
+    font-size: 1.6rem;
+}
+
+
+
+.side-nav > ul >li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2rem;
+    font-size: 2.2rem;
+    list-style: none;
+
+    position: relative;
+
+    transition: all .4s;
+    z-index: 999999;
+}
+
+.side-nav a:link, .side-nav a:visited {
+    color:#0056b3;
+    text-decoration: none;
+}
+
+.side-nav-li:hover::after {
+    position: absolute;
+    top: -4px;
+    left: 6px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(89, 89, 89, 0.304);
+}
+
+#Wishlist a::before {
+    position: absolute;
+    top: -8px;
+    right: -13px;
+    content: "2";
+    border-radius: 50%;
+    z-index: 9999;
+    color: red;
+}
+     
+
+
+
+.side-nav:hover li {
+    gap: 1rem;
+}
