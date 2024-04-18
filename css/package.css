@@ -93,3 +93,46 @@ html {
 #beach {
     background-color: #FFEEAD;
 }
+
+.package-container-main{
+    min-width: 60rem;
+    margin-bottom: 2rem ;
+    
+    /* background-color:  #c9f1fe; */
+    }
+    
+    .package-container {
+        font-size: 1.6rem;
+        height: 18rem;
+        border-radius: 12px;
+        overflow: hidden;
+        background-color:  #fff;
+    
+        box-shadow: 5px 5px 10px 0px #1e52641a;
+    
+    
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    .package-container div {
+        height: 100%;
+    }
+    
+    .package-container div:nth-child(odd) {
+        height: 100%;
+        width: 20%;
+    }
+    
+    .package-container > .package-details {
+        width:60% ;
+        padding-left: 1.8rem;
+    }
+    
+    .package-container .package-img{
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
