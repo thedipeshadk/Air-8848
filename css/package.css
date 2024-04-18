@@ -178,4 +178,25 @@ html {
         background-image: url(../img/package-img/Toronto-Zoo-IMG_2727-1-1024x768.jpg);
     
     }
+
+    .p-d {
+        display: flex;
+        gap: 3.2rem;
+    }
     
+    
+    .package-rating {
+        display: inline-block;
+        background-color: green;
+        width: 4.2rem;
+        text-align: center;
+        padding: .8rem;
+        color: white;
+        border-radius: 12px;
+    }
+    
+    .p-d-middle,.p-d-right {
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
