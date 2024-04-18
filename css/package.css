@@ -1,0 +1,51 @@
+/* 
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #edfaff;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+/* ******************************************************************************************* */
+/* *************************************GENERAL STYLES *********************************** */
+.margin-small {
+    margin: 1rem;
+}
+
+.padding-small {
+    padding: 1rem;
+ }
+ 
+ .btn, .btn:active {
+    display: inline-block;
+    /* width: 12.8rem; */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #666;
+    padding: 1rem 1.6rem;
+    background-color:#4bcffa;
+    transition: all .2s ;
+ }
