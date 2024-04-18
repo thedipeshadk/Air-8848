@@ -84,3 +84,12 @@ html {
     border-radius: 2px;
     margin-bottom: 11rem;
 }
+
+#adventure {
+    background-color: rgba(17, 0, 255, 0.168);
+
+}
+
+#beach {
+    background-color: #FFEEAD;
+}
