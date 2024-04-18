@@ -49,3 +49,15 @@ html {
     background-color:#4bcffa;
     transition: all .2s ;
  }
+ .btn:hover, .btn:active {
+    background-color: #6fd9fb; 
+  }
+  
+  .bold {
+      font-weight: 600;
+  }
+  
+  .secondary-heading {
+      margin-bottom: 1.2rem;
+  }
+  
