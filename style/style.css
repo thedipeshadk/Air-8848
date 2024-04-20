@@ -225,30 +225,30 @@ html {
 
 }
 .category-img1{
-    background-image: url(/img/nav-1.jpg);
+    background-image: url(img/nav-1.jpg);
 
 }
 .category-img2{
-    background-image: url(/img/beach.jpg);
+    background-image: url(../img/beach.jpg);
 
 }
 .category-img3{
-    background-image: url(/img/religion.jpg);
+    background-image: url(../img/religion.jpg);
 
 }
 .category-img4{
-    background-image: url(/img/cultural.jpg);
+    background-image: url(../img/cultural.jpg);
 
 }
 .category-img5{
-    background-image: url(/img/urban.jpg);
+    background-image: url(../img/urban.jpg);
 }
 .category-img6{
-    background-image: url(/img/wildlife.jpg);
+    background-image: url(../img/wildlife.jpg);
 
 }
 .category-img7{
-    background-image: url(/img/ecos\ tour.jpg);
+    background-image: url(../img/ecos\ tour.jpg);
 }
 
 
@@ -402,7 +402,7 @@ html {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px; */
 
-    background-image: url(/img/hero.jpg);
+    background-image: url(img/hero.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
