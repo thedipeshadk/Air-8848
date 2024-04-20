@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/fav-icon.png" />
+    <link rel="stylesheet" href="../style/wishlist.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .place-container {
+        display: flex;
+        width: 500px;
+        flex-direction: column;
+        position: relative;
+        left: 23%;
+        top: 12rem;
+        z-index: -1;
+        padding-bottom: 15rem;
+      }
+
+      .add-item-img {
+        border: 12px solid black;
+        border-radius: 20px;
+        width: 80%;
+        height: 50%;
+      }
+
+      #add-item-h3 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        color: #4bcffa;
+
+        margin-top: 10px;
+      }
+
+      #add-item-p {
+        font-size: 2.2rem;
+        margin-top: 5px;
+      }
+      .btns {
+        background-color: #3498db; /* Blue background color */
+        border: none;
+        color: white; /* White text color */
+        padding: 10px 20px; /* Padding for the button */
+        text-align: center;
+        text-decoration: none;
+
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+      }
+      .btns:hover {
+        background-color: #2980b9; /* Darker blue color on hover */
+      }
+
+      .notification {
+        position: fixed;
+        top: 50%;
+        right: -300px; /* Off the screen initially */
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        border-radius: 5px;
+        z-index: 1;
+        transition: right 0.5s ease-in-out;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form">
+      <h2 class="heading-in-form">
+        Pack your bags !
+        <ion-icon name="pin-outline" class="pin"></ion-icon>
+      </h2>
+
+      <div class="form-body">
+        <input class="btn" id="pick" placeholder="Pickup" required />
+        <button class="transfer" id="transfer">
+          <ion-icon name="swap-horizontal-outline"></ion-icon>
+        </button>
+        <input class="btn" id="drop" placeholder="drop-off" required />
+
+        <div class="calendar">
+          <input class="btn" type="datetime-local" id="pick-d" required />
+          <input class="btn" type="datetime-local" id="drop-d" required />
+        </div>
+        <button class="search">
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="side-select">
+        <div class="route">
+          <h2>Route</h2>
+          <input type="radio" id="option1" name="option1" value="Option 1" />
+          <label for="option1">One-way</label><br />
+
+          <input type="radio" id="option2" name="option2" value="Option 2" />
+          <label for="option2">Return</label><br />
+
+          <input type="radio" id="option3" name="option3" value="Option3 " />
+          <label for="option3">Multi-City</label><br />
+        </div>
+
+        <div class="travellers" id="travellers">
+          <h2>Passengers</h2>
+          <div
+            class="adult"
+            style="display: flex; justify-content: space-between"
+          >
+            <label for="option2">Adults</label><br />
+            <button id="minusButton" onclick="alert('dd')">-</button>
+            <span id="count">1</span>
+            <button id="plusButton">+</button>
+          </div>
+
+          <div
+            class="std"
+            style="display: flex; justify-content: space-between"
+          >
+            <label for="option2">Students</label><br />
+            <button id="minusButton" onclick="alert('ss')">-</button>
+            <span id="count">1</span>
+            <button id="plusButton">+</button>
+          </div>
+
+          <div
+            class="youth"
+            style="display: flex; justify-content: space-between"
+          >
+            <label for="option2">Youth(12-17) </label><br />
+            <button id="minusButton">-</button>
+            <span id="count">0</span>
+            <button id="plusButton">+</button>
+          </div>
+
+          <div
+            class="child"
+            style="display: flex; justify-content: space-between"
+          >
+            <label for="option2">Children(2-11) </label><br />
+            <button id="minusButton">-</button>
+            <span id="count">0</span>
+            <button id="plusButton">+</button>
+          </div>
+          <div
+            class="toddler"
+            style="display: flex; justify-content: space-between"
+          >
+            <label for="option2">Toddlers (on lap) </label><br />
+            <button id="minusButton">-</button>
+            <span id="count">0</span>
+            <button id="plusButton">+</button>
+          </div>
+          <div
+            class="infant"
+            style="display: flex; justify-content: space-between"
+          >
+            <label for="option2">Infant (under 2) </label><br />
+            <button id="minusButton">-</button>
+            <span id="count">0</span>
+            <button id="plusButton">+</button>
+          </div>
+        </div>
+
+        <select name="class" id="flightclass">
+          <option value="opt1">Premium Economy</option>
+          <option value="opt2">Business</option>
+          <option value="opt3">First</option>
+          <option value="opt4">Multiple</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="place-container">
+      <div class="p-img">
+        <img alt="" class="add-item-img" />
+      </div>
+      <div class="small-pad">
+        <h3 id="add-item-h3"></h3>
+        <p id="add-item-p"></p>
+        <!-- <div class="button-div">
+          <button class="go-home btns">Go Home</button>
+        </div> -->
+      </div>
+    </div>
+
+    <div id="notification" class="notification">Booking done!</div>
+
+    <div class="side-form-container" id="sideFormContainer">
+      <div class="side-form">
+        <form action="#">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="Surname"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone Number"
+            required
+          />
+          <button class="Book btns" id="bookButton">Book</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="terms">
+      <h1 style="padding: 1rem 0 45px 0">
+        Terms and Conditions of Booking Ticket with 8848 Airways:
+      </h1>
+
+      <p style="padding: 0 0 3rem">
+        By booking a ticket with 8848 Airways, passengers agree to adhere to the
+        following terms and conditions. All bookings are subject to availability
+        and acceptance by 8848 Airways. Once a booking is confirmed, passengers
+        are responsible for ensuring the accuracy of their personal details
+        provided during the booking process. Any discrepancies must be reported
+        promptly to 8848 Airways. Changes to bookings, including date, time, or
+        route, may be subject to fees and availability constraints. Passengers
+        are required to check in within the specified time frame prior to
+        departure and to comply with all security and safety regulations. 8848
+        Airways reserves the right to refuse boarding to any passenger deemed
+        unfit for travel, including those under the influence of alcohol or
+        drugs. Passengers are responsible for obtaining all necessary travel
+        documents, including visas and passports, and for complying with entry
+        requirements at their destination. 8848 Airways shall not be liable for
+        any loss, damage, or inconvenience resulting from factors beyond its
+        control, including but not limited to weather conditions, political
+        unrest, or mechanical issues. Additional terms and conditions may apply,
+        and passengers are encouraged to review all policies before booking
+        their ticket with 8848 Airways.
+      </p>
+    </div>
+
+    <!--<script>
+      window.addEventListener('scroll', function() {
+        var sideFormContainer = document.getElementById('sideFormContainer');
+        // If user scrolls down more than 200 pixels, show the form
+        if (window.scrollY > 200) {
+          sideFormContainer.style.display = 'block';
+        } else {
+          sideFormContainer.style.display = 'none';
+        }
+      });
+      </script>
+    -->
+
+    <script>
+      window.onload = function () {
+        document.getElementById("bookButton").addEventListener("click", book);
+
+        let released = localStorage.getItem("stored");
+        let released2 = localStorage.getItem("stored2");
+        let released3 = localStorage.getItem("stored3");
+        console.log(released3);
+
+        let h3Container = document.getElementById("add-item-h3");
+        let pContainer = document.getElementById("add-item-p");
+        let imgContainer = document.querySelector(".add-item-img");
+
+        h3Container.textContent = released;
+        pContainer.textContent = released2;
+        imgContainer.setAttribute("src", released3);
+      };
+
+      // /////////////////
+      function book() {
+        //pickup location
+        const pick = document.getElementById("pick").value;
+        localStorage.setItem("pickout", pick);
+        console.log(pick);
+
+        //dropoff location
+        const drop = document.getElementById("drop").value;
+        localStorage.setItem("dropoff", drop);
+        console.log(drop);
+
+        //pickup date
+        const pick_date = document.getElementById("pick-d").value;
+        localStorage.setItem("pickd", pick_date);
+        console.log(pick_date);
+
+        //surname
+        const surname = document.getElementById("surname").value;
+        localStorage.setItem("dropsurname", surname);
+        console.log(surname);
+
+        //name
+        const name = document.getElementById("name").value;
+        localStorage.setItem("firstname", name);
+        console.log(name);
+
+        window.location.href = "ticket.html";
+
+        alert("gsgs");
+        // Show the notification box
+        var notification = document.getElementById("notification");
+        notification.style.right = "20px"; // Slide in from the right
+
+        // Hide the notification box after 3 seconds
+        setTimeout(function () {
+          notification.style.right = "-300px"; // Slide out to the right
+        }, 3000);
+
+        // Redirect to index.html after 3 seconds
+        setTimeout(function () {
+          window.location.href = "index.html";
+        }, 3000);
+      }
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

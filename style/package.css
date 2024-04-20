@@ -35,33 +35,35 @@ html {
 }
 
 .padding-small {
-    padding: 1rem;
- }
- 
- .btn, .btn:active {
-    display: inline-block;
-    /* width: 12.8rem; */
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #666;
-    padding: 1rem 1.6rem;
-    background-color:#4bcffa;
-    transition: all .2s ;
- }
- .btn:hover, .btn:active {
-    background-color: #6fd9fb; 
-  }
-  
-  .bold {
-      font-weight: 600;
-  }
-  
-  .secondary-heading {
-      margin-bottom: 1.2rem;
-  }
+   padding: 1rem;
+}
 
-  /* ******************************************************************************************* */
+.btn, .btn:active {
+   display: inline-block;
+   /* width: 12.8rem; */
+   text-align: center;
+   border-radius: 5px;
+   text-decoration: none;
+   color: #666;
+   padding: 1rem 1.6rem;
+   background-color:#4bcffa;
+   transition: all .2s ;
+}
+
+.btn:hover, .btn:active {
+  background-color: #6fd9fb; 
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.secondary-heading {
+    margin-bottom: 1.2rem;
+}
+
+
+/* ******************************************************************************************* */
 /* *********************************************************************** */
 .all-pkgs {
     margin: 12.4rem 4rem;
@@ -94,120 +96,124 @@ html {
     background-color: #FFEEAD;
 }
 
+
 .package-container-main{
-    min-width: 60rem;
-    margin-bottom: 2rem ;
-    
-    /* background-color:  #c9f1fe; */
-    }
-    
-    .package-container {
-        font-size: 1.6rem;
-        height: 18rem;
-        border-radius: 12px;
-        overflow: hidden;
-        background-color:  #fff;
-    
-        box-shadow: 5px 5px 10px 0px #1e52641a;
-    
-    
-        display: flex;
-        flex: 1 1 auto;
-        align-items: center;
-        justify-items: center;
-    }
-    
-    .package-container div {
-        height: 100%;
-    }
-    
-    .package-container div:nth-child(odd) {
-        height: 100%;
-        width: 20%;
-    }
-    
-    .package-container > .package-details {
-        width:60% ;
-        padding-left: 1.8rem;
-    }
-    
-    .package-container .package-img{
-        background-size: cover;
-        background-repeat: no-repeat;
-    
-    }
+min-width: 60rem;
+margin-bottom: 2rem ;
 
-    .package-img-1 {
-        background-image: url(../img/package-img/perry-kibler-X41O9TMInoU-unsplash.jpg);
-    }
-    
-    .package-img-2 {
-        background-image: url(../img/package-img/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
-    }
-    
-    .package-img-3 {
-        background-image: url(../img/package-img/raimond-klavins-xAqrT-279UA-unsplash.jpg);
-    }
-    
-    .package-img-4 {
-        background-image: url(../img/package-img/gaddafi-rusli-2ueUnL4CkV8-unsplash.jpg);
-    }
-    
-    .package-img-5 {
-        background-image: url(../img/package-img/marc-fanelli-isla-4JrhdmdeuKI-unsplash.jpg);
-    }
-    .package-img-6 {
-        background-image: url(../img/package-img/germine-sealy-qKvWD7NCVvM-unsplash.jpg);
-    }
-    .package-img-7 {
-        background-image: url(../img/portfolio-o/vrindavan.jpg);
-    }
-    .package-img-8 {
-        background-image: url(../img/portfolio/Lumbini.jpg);
-    }
-    .package-img-9 {
-        background-image: url(../img/portfolio-o/haidan-IAwnp88Fz8Y-unsplash.jpg);
-    }
-    .package-img-10 {
-        background-image: url(../img/package-img/Chitwan\ np.jpg);
-    }
-    .package-img-11{
-        background-image: url(../img/package-img/amazon\ rainforest.jpg);
-    }
-    .package-img-12{
-        background-image: url(../img/package-img/Toronto-Zoo-IMG_2727-1-1024x768.jpg);
-    
-    }
+/* background-color:  #c9f1fe; */
+}
 
-    .p-d {
-        display: flex;
-        gap: 3.2rem;
-    }
-    
-    
-    .package-rating {
-        display: inline-block;
-        background-color: green;
-        width: 4.2rem;
-        text-align: center;
-        padding: .8rem;
-        color: white;
-        border-radius: 12px;
-    }
-    
-    .p-d-middle,.p-d-right {
-        display: flex;
-        flex-direction: column;
-        gap: .8rem;
-    }
-    .package-pricing {
-        display: flex;
-        flex-direction: column;
-        gap: .8rem;
-        border-left: 1px solid #999;
-    }
+.package-container {
+    font-size: 1.6rem;
+    height: 18rem;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color:  #fff;
 
-    /* ******************************************************************************************* */
+    box-shadow: 5px 5px 10px 0px #1e52641a;
+
+
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.package-container div {
+    height: 100%;
+}
+
+.package-container div:nth-child(odd) {
+    height: 100%;
+    width: 20%;
+}
+
+.package-container > .package-details {
+    width:60% ;
+    padding-left: 1.8rem;
+}
+
+.package-container .package-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.package-img-1 {
+    background-image: url(../img/package-img/perry-kibler-X41O9TMInoU-unsplash.jpg);
+}
+
+.package-img-2 {
+    background-image: url(../img/package-img/toomas-tartes-Yizrl9N_eDA-unsplash.jpg);
+}
+
+.package-img-3 {
+    background-image: url(../img/package-img/raimond-klavins-xAqrT-279UA-unsplash.jpg);
+}
+
+.package-img-4 {
+    background-image: url(../img/package-img/gaddafi-rusli-2ueUnL4CkV8-unsplash.jpg);
+}
+
+.package-img-5 {
+    background-image: url(../img/package-img/marc-fanelli-isla-4JrhdmdeuKI-unsplash.jpg);
+}
+.package-img-6 {
+    background-image: url(../img/package-img/germine-sealy-qKvWD7NCVvM-unsplash.jpg);
+}
+.package-img-7 {
+    background-image: url(../img/portfolio-o/vrindavan.jpg);
+}
+.package-img-8 {
+    background-image: url(../img/portfolio/Lumbini.jpg);
+}
+.package-img-9 {
+    background-image: url(../img/portfolio-o/haidan-IAwnp88Fz8Y-unsplash.jpg);
+}
+.package-img-10 {
+    background-image: url(../img/package-img/Chitwan\ np.jpg);
+}
+.package-img-11{
+    background-image: url(../img/package-img/amazon\ rainforest.jpg);
+}
+.package-img-12{
+    background-image: url(../img/package-img/Toronto-Zoo-IMG_2727-1-1024x768.jpg);
+
+}
+
+
+
+.p-d {
+    display: flex;
+    gap: 3.2rem;
+}
+
+
+.package-rating {
+    display: inline-block;
+    background-color: green;
+    width: 4.2rem;
+    text-align: center;
+    padding: .8rem;
+    color: white;
+    border-radius: 12px;
+}
+
+.p-d-middle,.p-d-right {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+
+.package-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border-left: 1px solid #999;
+}
+/* ******************************************************************************************* */
 /* *************************************AD CONTAINER *********************************** */
 .whole-package {
     display: grid;

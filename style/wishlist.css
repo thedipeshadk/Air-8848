@@ -1,0 +1,177 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: sans-serif;
+    overflow-x:hidden 
+}
+
+.heading-in-form{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    position: fixed;
+    background-color: #999;
+    width: 100%;
+    
+    align-items: center;
+   
+
+}
+.form-body{
+display: flex;
+width: 100%;
+gap: 43px;
+padding: 30px;
+margin-top: 0;
+margin-left: 0rem;
+z-index: -1;
+
+}
+.age{
+    display: flex;
+    flex-direction: column;
+}
+.book{
+    position: absolute;
+    top: 50%;
+    left: 70vw;
+}
+
+.form-body .btn{
+    width: 320px;
+    height: 55px;
+    font-size: 1rem;
+    border: 2px solid black;
+    border-radius: 12px;
+
+}
+
+.form-body ion-icon{
+    display: flex;
+    width: 50px;
+    height: 30px;
+    
+}
+.transfer,
+.search{
+    border: 2px solid black;
+    border-radius: 14px;
+}
+.calendar{
+    display: flex;
+    width: 520px;
+    gap: 0px;
+}
+.side-select{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100%;
+    gap: 40px;
+   
+    padding: 20px 10px 10px 10px;
+    /* background-color: blueviolet; */
+    position: fixed;
+    
+}
+.route input{
+    padding: 20px;
+}
+
+
+.terms {
+    display: flex;
+    flex-direction: column;
+    margin-left: 22rem;
+    margin-top: 0rem;
+    width: 50%;
+}
+.adult,.std,
+
+/* Style for the label */
+label {
+    font-weight: bold;
+  }
+  
+  /* Style for the input field */
+  input[type="number"] {
+    width: 150px; /* Adjust width as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style for the spinner buttons */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Style for the input field when focused */
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff; /* Change color as desired */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Change shadow as desired */
+  }
+  
+  /* Style for the input field when hovering */
+  input[type="number"]:hover {
+    border-color: #999; /* Change color as desired */
+  }
+
+#bookButton{
+    margin-top: 10vh;
+}
+
+
+  
+  .side-form {
+    position: fixed;
+    top: 24%;
+    right: 0rem;
+    height: 80vh; /* Cover entire viewport height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    width: 300px; /* Adjust width as needed */
+    display: flex;
+    justify-content: flex-end; /* Align content to right */
+    align-items: center; /* Center vertically */
+    
+    padding: 20px;
+    box-sizing: border-box;
+    
+  }
+
+  .side-form {
+    background-color: #f1f1f1;
+   
+    width: 100%; /* Fill entire container width */
+    max-width: 300px; /* Limit width if needed */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .side-form input[type="text"],
+  .side-form input[type="email"],
+  .side-form input[type="tel"] {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+ 
+  .travellers{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }

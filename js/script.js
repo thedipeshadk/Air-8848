@@ -18,3 +18,11 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', scrollToCategory);
     });
 });
+
+
+
+
+
+
+
+

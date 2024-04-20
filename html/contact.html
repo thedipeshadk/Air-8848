@@ -128,52 +128,52 @@
   </head>
   <body>
     <div class="container">
-        <h1>Contact Us</h1>
-        <form id="contact-form" action="html/contact.html" method="post">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
-          />
-          <label for="email">Email:</label>
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-          <label for="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Enter your message"
-            required
-          ></textarea>
-          <input type="submit" value="Submit" />
-        </form>
-        <a href="../index.html" class="home-link">Back to Home</a>
-      </div>
-      <div class="emoji-container">
-        <div class="emoji">🛫</div>
-      </div>
-  </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var contactForm = document.getElementById("contact-form");
+      <h1>Contact Us</h1>
+      <form id="contact-form" action="html/contact.html" method="post">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+        <label for="email">Email:</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+        <input type="submit" value="Submit" />
+      </form>
+      <a href="../index.html" class="home-link">Back to Home</a>
+    </div>
+    <div class="emoji-container">
+      <div class="emoji">🛫</div>
+    </div>
 
-      contactForm.addEventListener("submit", function (event) {
-        // Prevent form submission
-        event.preventDefault();
-        // Redirect to thankyou.html after 3 seconds
-        setTimeout(function () {
-          window.location.href = "thankyou.html";
-        }, 1000);
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var contactForm = document.getElementById("contact-form");
+
+        contactForm.addEventListener("submit", function (event) {
+          // Prevent form submission
+          event.preventDefault();
+          // Redirect to thankyou.html after 3 seconds
+          setTimeout(function () {
+            window.location.href = "thankyou.html";
+          }, 1000);
+        });
       });
-    });
-  </script>
-
+    </script>
+  </body>
 </html>

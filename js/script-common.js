@@ -33,3 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
     // Close side nav when clicking outside of it
     document.addEventListener("click", handleClickOutside);
   });
+
+
+
+///////Removing phone number, when screen size decreases
+
+    function removeTelephoneLinkOnSmallScreen() {
+        var phoneLink = document.getElementById('myPhoneLink');
+        if (window.innerWidth < 702) { // You can adjust this threshold according to your requirements
+            phoneLink.removeAttribute('href');
+        } else {
+            phoneLink.setAttribute('href', 'tel:415-201-6370'); // Reset the href if screen size increases
+        }
+    }
+
+    // Call the function initially and whenever the window is resized
+    removeTelephoneLinkOnSmallScreen();
+    window.addEventListener('resize', removeTelephoneLinkOnSmallScreen);
+
+
+ 

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/ticket.css">
+</head>
+<body>
+    <div class="boarding">
+        <div class="ticket">
+            <h1>Boarding Pass</h1>
+              
+            
+               <div class="passenger">
+                   <h3><p>Name of passenger</p></h3>
+                   <div class="name1">
+                       <div  class="surname" value="Surname">Surname</div> 
+                       <label for="passenger">/</label>
+                       <div  class="name" value="name">Name</div>
+                   </div>    
+               </div>
+                
+       
+                   <div class="location">
+                       <div class="from">From:</div>
+                       <div class="to">To:</div>
+                   </div>
+                   <div class="barcode">
+                       <img src="img/44f93d7db4ed61719891d72c361bc46e.jpg" alt="">
+                   </div>
+       
+                   <div class="bottom">
+                       <div class="gate">
+                           <h3>GATE:999</h3>
+                       </div>
+                       <div class="board-time">
+                          <h3>Boarding Time:14:05 AM</h3> 
+                       </div>
+                   </div>
+       
+                       <div class="upper">
+                           <div class="flight-num" style="display: flex; flex-direction: column;     width: 57px;">
+                               <P><h3>Flight:</h3>AB 2004</P>
+                           </div>
+                           <div class="f-date" value="f-date" style="    width: 82px;">
+                               <h3>Flight date:</h3>
+                           </div>
+                           <div class="seat" style="width: 52px;">
+                               <p><h3>Seat:</h3>DP19</p>
+                           </div>
+                       </div>
+                 <div class="company-name">
+                           <h2>8848</h2>
+                   </div>
+           </div>  
+            
+            <div class="side-part" >
+                <div class="fclass" value="fclass">
+                    <h2>Economy</h2>
+                </div>
+       
+               
+              <div class="part2">
+               <div class="side-name">
+                   <div  class="surname" value="Surname">Surname</div> 
+                   <label id="passenger">/</label>
+                   <div  class="name" value="name">Name</div> 
+                   
+                   </div>
+                   <div class="side-location">
+                       <div class="from">From:</div>
+                       <div class="to">To:</div>
+                   </div>
+       
+                   <div class="part1">
+                       <div class="side-gate">
+                           GATE:999
+                       </div>
+                       <div class="side-board-time">
+                           Boarding Time:14:05 AM
+                       </div>
+                   </div>
+       
+                  
+                   <div class="part2n">
+                    <div class="side-flight-num">
+                        <P>Flight:AB 20004</P>
+                    </div>
+                    <div class="f-date">
+                        <P>Date:</P>
+                    </div>
+                    <div class="seat">
+                        <p>Seat:DP19</p>
+                    </div>
+                   </div>
+       
+                   <div class="slogan">
+                       <h5>Jai ho</h5>
+                   </div>
+               
+              </div> 
+             
+        </div>
+       </div> 
+    </div>
+  
+    <div class="emptypart">
+        <h2>--------------</h2>
+    </div>
+       
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+    window.onload = function() {
+
+        //FROM LOCATION
+        const from = localStorage.getItem('pickout');
+        console.log("jjk");
+        const fromContainer = document.querySelectorAll('.from');
+        fromContainer.forEach(function(container) { // Iterate over each 'from' container
+        container.innerText = "From: " + from;
+    });
+       
+       //TO LOCATION
+        const to = localStorage.getItem('dropoff');
+        console.log("k");
+        const toContainer = document.querySelectorAll('.to');
+        toContainer.forEach(function(container) { // Iterate over each 'to' container
+        container.innerText = "To: " + to;
+    });
+
+        //Pickup-date
+        const flight_date = localStorage.getItem('pickd');
+       
+        const fdateContainer = document.querySelectorAll('.f-date');
+        fdateContainer.forEach(function(container) { // Iterate over each 'f-date' container
+        container.innerText = "Flight Date: " + flight_date;
+        console.log(fdateContainer);
+    });
+
+    //surname
+    const surname = localStorage.getItem('dropsurname');
+       
+       const surnameContainer = document.querySelectorAll('.surname');
+       surnameContainer.forEach(function(container) { // Iterate over each 'f-date' container
+       container.innerText =  surname;
+       console.log(surname);
+   });
+
+   //name
+   const name = localStorage.getItem('firstname');
+       
+       const nameContainer = document.querySelectorAll('.name');
+       nameContainer.forEach(function(container) { // Iterate over each 'f-date' container
+       container.innerText =  name;
+       console.log(name);
+   });
+
+   //class
+
+
+    
+ // Declare a variable with 5 different values
+
+
+
+}
+
+
+
+
+
+
+
+// Example usage:
+/*const randomCode = generateRandomCode();
+console.log(randomCode);
+}*/
+</script>
+
+
+</html>

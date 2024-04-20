@@ -1,3 +1,4 @@
+
 @media (max-width: 1092px) {
     .categories ul li:last-child {
         display: none;
@@ -68,10 +69,12 @@
 
     .categories li p {
         display: none;
+        transition:all 5s;
     }
 
     .categories li:hover  p {
         display: flex;
+        
     }
 
     .categories ul li:last-child {
@@ -180,6 +183,11 @@
     margin-left: 20px;
 }
 
+#myPhoneLink {
+    color: #999;
+}
+
+
 
 
 
@@ -286,3 +294,4 @@
 
     
     }
+

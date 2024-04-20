@@ -1,404 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/fav-icon.png" />
     <link rel="stylesheet" href="style/package.css" />
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/responsive.css" />
 
-    <title>air58848</title>
-</head>
-<body>
+    <title>Homepage</title>
+  </head>
+  <body>
     <div class="main-container">
-        <!-- Header container for logao and signup -->
-        <div class="header-container">
-          <header>
-            <nav class="navigation">
-              <ul>
-                <li>
-                  <img src="img/logo.png" alt="air8848 logo" class="logo" />
+      <!-- Header container for logao and signup -->
+      <div class="header-container">
+        <header>
+          <nav class="navigation">
+            <ul>
+              <li>
+                <img src="img/logo.png" alt="air8848 logo" class="logo" />
+              </li>
+              <li class="booking">
+                <input
+                  type="search"
+                  name="pick-up"
+                  id="pick-up"
+                  class=""
+                  placeholder="Search your destination"
+                />
+                <label for="pick-up"
+                  ><button>
+                    <ion-icon
+                      name="search-outline"
+                      class="ion-icon"
+                    ></ion-icon></button
+                ></label>
+              </li>
+
+              <li>
+                <a href="https://google.com" class="btn" id="login-btn">
+                  <ion-icon name="person-outline"></ion-icon
+                  ><span>Sign Up</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="categories">
+              <ul id="categoryList">
+                <li class="">
+                  <a
+                    href="html/abc.html#adventure-head"
+                    class="category category1"
+                  >
+                    <div class="category-img category-img1"><!--img--></div>
+                    <p class="category-details">Adventure</p>
+                  </a>
                 </li>
-                <li class="booking">
-                  <input
-                    type="search"
-                    name="pick-up"
-                    id="pick-up"
-                    class=""
-                    placeholder="Search your destination"
-                  />
-                  <label for="pick-up"
-                    ><button>
-                      <ion-icon
-                        name="search-outline"
-                        class="ion-icon"
-                      ></ion-icon></button
-                  ></label>
+                <li class="">
+                  <a href="html/abc.html#beach-head" class="category category2">
+                    <div class="category-img category-img2"><!--img--></div>
+                    <p class="category-details">Beach</p>
+                  </a>
                 </li>
-  
-                <li>
-                  <a href="https://google.com" class="btn" id="login-btn">
-                    <ion-icon name="person-outline"></ion-icon
-                    ><span>Sign Up</span>
+
+                <li class="">
+                  <a
+                    href="html/abc.html#religion-head"
+                    class="category category3"
+                  >
+                    <div class="category-img category-img3"><!--img--></div>
+                    <p class="category-details">Religion</p>
+                  </a>
+                </li>
+                <li class="">
+                  <a
+                    href="html/abc.html#recultural-head"
+                    class="category category4"
+                  >
+                    <div class="category-img category-img4"><!--img--></div>
+                    <p class="category-details">Cultural</p>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="html/abc.html#urban-head" class="category category5">
+                    <div class="category-img category-img5"><!--img--></div>
+                    <p class="category-details">Urban</p>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a
+                    href="html/abc.html#wildlife-head"
+                    class="category category6"
+                  >
+                    <div class="category-img category-img6"><!--img--></div>
+                    <p class="category-details">Wildlife</p>
+                  </a>
+                </li>
+
+                <li class="">
+                  <a
+                    href="html/abc.html#eco-tourism-head"
+                    class="category category7"
+                  >
+                    <div class="category-img category-img7"><!--img--></div>
+                    <p class="category-details">Eco-Tourism</p>
                   </a>
                 </li>
               </ul>
-  
-              <div class="categories">
-                <ul id="categoryList">
-                  <li class="">
-                    <a
-                      href="html/abc.html#adventure-head"
-                      class="category category1"
-                    >
-                      <div class="category-img category-img1"><!--img--></div>
-                      <p class="category-details">Adventure</p>
-                    </a>
-                  </li>
-                  <li class="">
-                    <a href="html/abc.html#beach-head" class="category category2">
-                      <div class="category-img category-img2"><!--img--></div>
-                      <p class="category-details">Beach</p>
-                    </a>
-                  </li>
-  
-                  <li class="">
-                    <a
-                      href="html/abc.html#religion-head"
-                      class="category category3"
-                    >
-                      <div class="category-img category-img3"><!--img--></div>
-                      <p class="category-details">Religion</p>
-                    </a>
-                  </li>
-                  <li class="">
-                    <a
-                      href="html/abc.html#recultural-head"
-                      class="category category4"
-                    >
-                      <div class="category-img category-img4"><!--img--></div>
-                      <p class="category-details">Cultural</p>
-                    </a>
-                  </li>
-                  <li class="">
-                    <a href="html/abc.html#urban-head" class="category category5">
-                      <div class="category-img category-img5"><!--img--></div>
-                      <p class="category-details">Urban</p>
-                    </a>
-                  </li>
-  
-                  <li class="">
-                    <a
-                      href="html/abc.html#wildlife-head"
-                      class="category category6"
-                    >
-                      <div class="category-img category-img6"><!--img--></div>
-                      <p class="category-details">Wildlife</p>
-                    </a>
-                  </li>
-  
-                  <li class="">
-                    <a
-                      href="html/abc.html#eco-tourism-head"
-                      class="category category7"
-                    >
-                      <div class="category-img category-img7"><!--img--></div>
-                      <p class="category-details">Eco-Tourism</p>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </header>
-        </div>
-  
-        <!-- Hero section for the photo and side-nav -->
-  
-        <div class="hero-section">
-          <aside class="side-nav">
-            <ul class="first-nav">
-              <li class="side-nav-li">
-                <button id="toggleButton">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </button>
-              </li>
-              <li class="side-nav-li">
-                <ion-icon name="home-outline"></ion-icon>
-                <span><a href="index.html">Home</a></span>
-              </li>
-              <li class="side-nav-li">
-                <ion-icon name="archive-outline"></ion-icon>
-                <span><a href="html/abc.html">Packages</a></span>
-              </li>
-              <li class="side-nav-li">
-                <ion-icon name="id-card-outline"></ion-icon>
-                <span><a href="html/aboutus.html">About Us</a></span>
-              </li>
-              <li class="side-nav-li">
-                <ion-icon name="call-outline"></ion-icon
-                ><span><a href="html/contact.html">Contact</a></span>
-              </li>
-              <li class="side-nav-li">
-                <ion-icon name="images-outline"></ion-icon>
-                <span><a href="html/error.html">Gallery</a></span>
-              </li>
-            </ul>
-  
-            <ul class="second-nav first-nav">
-              <li class="h-bar"></li>
-              <li class="side-nav-li">
-                <ion-icon name="time-outline"></ion-icon>
-                <span><a href="html/error.html">History</a></span>
-              </li>
-  
-              <li class="side-nav-li">
-                <ion-icon name="globe-outline"></ion-icon>
-                <span><a href="html/error.html">Explore</a></span>
-              </li>
-              <li class="side-nav-li" id="Wishlist">
-                <ion-icon name="heart-outline"></ion-icon>
-                <span><a href="html/error.html">Wishlist</a></span>
-              </li>
-  
-              <li style="border: 1px solid #999"></li>
-              <li class="side-nav-li">
-                <ion-icon name="finger-print-outline"></ion-icon>
-                <span><a href="html/error.html"> Data</a></span>
-              </li>
-  
-              <li class="side-nav-li">
-                <ion-icon name="settings-outline"></ion-icon>
-                <span><a href="html/error.html">Setting</a></span>
-              </li>
-            </ul>
-          </aside>
-  
-          <!-- Content in the hero section -->
-          <div class="hero-details">
-            <!-- <div class="hero-img">
-              <img src="/img/hero.jpg" alt="" />
-            </div> -->
-            <div class="hero-desc">
-              <h1 class="primary-header">
-                Embark on Unforgettable Journeys Across the Globe
-              </h1>
-              <p class="side-desc">
-                Welcome to <span class="highlight">Air8848</span> ,where Every
-                Journey Begins with Boundless Adventure"
-              </p>
-  
-              <p>
-                As your trusted airline partner, we're here to help you explore
-                the world and create unforgettable memories. Whether you're
-                seeking adventure, relaxation, or cultural immersion, join us as
-                we embark on exciting journeys to destinations near and far. Let
-                <span class="highlight">Air8848</span> be your guide to endless
-                exploration and discovery.
-              </p>
             </div>
-  
-            <div class="cta">
-              <a href="html/abc.html" class="f-flight btn">Book First Flight</a>
-              <a href="#" class="l-more btn">Learn More &rarr;</a>
-            </div>
+          </nav>
+        </header>
+      </div>
+
+      <!-- Hero section for the photo and side-nav -->
+
+      <div class="hero-section">
+        <aside class="side-nav">
+          <ul class="first-nav">
+            <li class="side-nav-li">
+              <button id="toggleButton">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="home-outline"></ion-icon>
+              <span><a href="index.html">Home</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="archive-outline"></ion-icon>
+              <span><a href="html/abc.html">Packages</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="id-card-outline"></ion-icon>
+              <span><a href="html/aboutus.html" id="myLink">About Us</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="call-outline"></ion-icon
+              ><span><a href="html/contact.html">Contact</a></span>
+            </li>
+            <li class="side-nav-li">
+              <ion-icon name="images-outline"></ion-icon>
+              <span><a href="#">Gallery</a></span>
+            </li>
+          </ul>
+
+          <ul class="second-nav first-nav">
+            <li class="h-bar"></li>
+            <li class="side-nav-li">
+              <ion-icon name="time-outline"></ion-icon>
+              <span><a href="html/error.html">History</a></span>
+            </li>
+
+            <li class="side-nav-li">
+              <ion-icon name="globe-outline"></ion-icon>
+              <span><a href="html/error.html">Explore</a></span>
+            </li>
+            <li class="side-nav-li" id="Wishlist">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span><a href="html/error.html">Wishlist</a></span>
+            </li>
+
+            <li style="border: 1px solid #999"></li>
+            <li class="side-nav-li">
+              <ion-icon name="finger-print-outline"></ion-icon>
+              <span><a href="html/error.html"> Data</a></span>
+            </li>
+
+            <li class="side-nav-li">
+              <ion-icon name="settings-outline"></ion-icon>
+              <span><a href="html/error.html">Setting</a></span>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Content in the hero section -->
+        <div class="hero-details">
+          <!-- <div class="hero-img">
+            <img src="/img/hero.jpg" alt="" />
+          </div> -->
+          <div class="hero-desc">
+            <h1 class="primary-header">
+              Embark on Unforgettable Journeys Across the Globe
+            </h1>
+            <p class="side-desc">
+              Welcome to <span class="highlight">Air8848</span> ,where Every
+              Journey Begins with Boundless Adventure"
+            </p>
+
+            <p>
+              As your trusted airline partner, we're here to help you explore
+              the world and create unforgettable memories. Whether you're
+              seeking adventure, relaxation, or cultural immersion, join us as
+              we embark on exciting journeys to destinations near and far. Let
+              <span class="highlight">Air8848</span> be your guide to endless
+              exploration and discovery.
+            </p>
+          </div>
+
+          <div class="cta">
+            <a href="wishlist.html" class="f-flight btn">Book First Flight</a>
+            <a href="html/aboutus.html" class="l-more btn">Learn More &rarr;</a>
           </div>
         </div>
       </div>
-  
-      <div class="offer-promotion">
-        <div class="offer">
-          <div class="container-offer grid grid--4-cols">
-            <div class="feature">
-              <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
-              <p class="feature-title">Group Booking Discounts</p>
-              <p class="feature-text">
-                Save on group bookings with our special discounts for corporate
-                retreats, family reunions, or school trips
-              </p>
-            </div>
-            <div class="feature">
-              <ion-icon class="feature-icon" name="mail-outline"></ion-icon>
-              <p class="feature-title">Email Subscribers Offers</p>
-              <p class="feature-text">
-                Get exclusive offers and discounts. Sign up for our newsletter
-                now!
-              </p>
-            </div>
-            <div class="feature">
-              <ion-icon class="feature-icon" name="flash-outline"></ion-icon>
-              <p class="feature-title">Flash Deals</p>
-              <p class="feature-text">
-                Hurry! Grab our limited-time flash deals for discounted fares on
-                select routes. Book now before they disappear!
-              </p>
-            </div>
-            <div class="feature">
-              <ion-icon class="feature-icon" name="pulse-outline"></ion-icon>
-              <p class="feature-title">Family Packages</p>
-              <p class="feature-text">
-                Traveling with family? Enjoy savings with our family packages
-                discounted fares, special amenities, flexible booking
-              </p>
-            </div>
+    </div>
+
+    <div class="offer-promotion">
+      <div class="offer">
+        <div class="container-offer grid grid--4-cols">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">Group Booking Discounts</p>
+            <p class="feature-text">
+              Save on group bookings with our special discounts for corporate
+              retreats, family reunions, or school trips
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="mail-outline"></ion-icon>
+            <p class="feature-title">Email Subscribers Offers</p>
+            <p class="feature-text">
+              Get exclusive offers and discounts. Sign up for our newsletter
+              now!
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="flash-outline"></ion-icon>
+            <p class="feature-title">Flash Deals</p>
+            <p class="feature-text">
+              Hurry! Grab our limited-time flash deals for discounted fares on
+              select routes. Book now before they disappear!
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pulse-outline"></ion-icon>
+            <p class="feature-title">Family Packages</p>
+            <p class="feature-text">
+              Traveling with family? Enjoy savings with our family packages
+              discounted fares, special amenities, flexible booking
+            </p>
           </div>
         </div>
       </div>
-  
-      <section class="travel">
-        <div class="content2">
-          <h2 class="travel-p">Skip the ordinary</h2>
-          <p>Skip the layovers and fly nonstop to these destinations</p>
-  
-          <div class="best-choice">
-            <div class="place-container">
-              <div class="p-img">
-                <img src="img/portfolio/vrindavan.jpg" alt="" />
-              </div>
-              <div class="small-pad">
-                <h3>Vrindavan, India</h3>
-                <p>from C$ 233</p>
-              </div>
-            </div>
-  
-            <div class="place-container">
-              <div class="p-img">
-                <img src="img/portfolio/Lumbini.jpg" alt="" />
-              </div>
-              <div class="small-pad">
-                <h3>Lumbini, Nepal</h3>
-                <p>from C$ 233</p>
-              </div>
-            </div>
+    </div>
 
-            <div class="place-container">
-                <div class="p-img">
-                  <img src="img/portfolio/haidan-IAwnp88Fz8Y-unsplash.jpg" alt="" />
-                </div>
-                <div class="small-pad">
-                  <h3>Mecca, Saudi Arabia</h3>
-                  <p>from C$ 233</p>
-                </div>
-              </div>
-    
-              <div class="place-container">
-                <div class="p-img">
-                  <img src="img/portfolio/angkor wat.jpg" alt="" />
-                </div>
-                <div class="small-pad">
-                  <h3>Angkor Wat, Cambodia</h3>
-                  <p>from C$ 233</p>
-                </div>
-              </div>
+    <section class="travel">
+      <div class="content2">
+        <h2 class="travel-p">Skip the ordinary</h2>
+        <p>Skip the layovers and fly nonstop to these destinations</p>
+
+        <div class="best-choice">
+          <div class="place-container">
+            <div class="p-img">
+              <img
+                src="img/portfolio/vrindavan.jpg"
+                alt=""
+                class="original-img"
+              />
             </div>
-            <p class="see-all"><a href="">See all &rarr;</a></p>
+            <div class="small-pad p-details">
+              <h3 class="original-h3">Vrindavan, India</h3>
+              <p class="original-p">from C$ 233</p>
+              <button
+                class="add-item"
+                id="redirect-btn"
+                onclick="addItem(this)"
+              >
+                Book &RightArrow;
+              </button>
+            </div>
           </div>
-        </section>
-        <section class="feedback-section">
-            <form action="html/contact.html" id="feedback-form" method="POST">
-              <div class="feedback">
-                <h3 class="travel-p">Share your thoughts</h3>
-                <input
-                  type="text"
-                  name="feedback"
-                  class="fd-place"
-                  placeholder="Write a feedback"
-                  required
-                />
-                <input type="submit" value="Send" class="submit" />
-              </div>
-            </form>
-          </section>
-      
-          <footer class="footer">
-            <div class="footer-container grid grid--footer">
-              <div class="logo-col">
-                <a href="#" class="footer-logo">
-                  <img class="logo" alt="Omnifood logo" src="img/logo.png" />
-                </a>
-      
-                <ul class="social-links">
-                  <li>
-                    <a class="footer-link" href="#"
-                      ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="footer-link" href="#"
-                      ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="footer-link" href="#"
-                      ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
-                    ></a>
-                  </li>
-                </ul>
-      
-                <p class="copyright">
-                  Copyright &copy; <span class="year">2024</span> by Air8848, Inc. All
-                  rights reserved.
-                </p>
-              </div>
-      
-              <div class="address-col">
-                <p class="footer-heading">Contact us</p>
-                <address class="contacts">
-                  <p class="address">
-                    623 Harrison St., 2nd Floor, San Francisco, CA 94107
-                  </p>
-                  <p>
-                    <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
-                    ><br />
-                    <a class="footer-link" href="mailto:hello@air8848.com.com"
-                      >hello@air8848.com</a
-                    >
-                  </p>
-                </address>
-              </div>
-      
-              <nav class="nav-col">
-                <p class="footer-heading">Account</p>
-                <ul class="footer-nav">
-                  <li><a class="footer-link" href="#">Create account</a></li>
-                  <li><a class="footer-link" href="#">Sign in</a></li>
-                  <li><a class="footer-link" href="#">iOS app</a></li>
-                  <li><a class="footer-link" href="#">Android app</a></li>
-                </ul>
-              </nav>
-              <nav class="nav-col">
-                <p class="footer-heading">Company</p>
-                <ul class="footer-nav">
-                  <li><a class="footer-link" href="#">About Us</a></li>
-                  <li><a class="footer-link" href="#">For Business</a></li>
-                  <li><a class="footer-link" href="#">Flight partners</a></li>
-                  <li><a class="footer-link" href="#">Careers</a></li>
-                </ul>
-              </nav>
 
-              <nav class="nav-col">
-                <p class="footer-heading">Resources</p>
-                <ul class="footer-nav">
-                  <li><a class="footer-link" href="#">Booking directory </a></li>
-                  <li><a class="footer-link" href="#">Help center</a></li>
-                  <li><a class="footer-link" href="#">Privacy & terms</a></li>
-                </ul>
-              </nav>
+          <div class="place-container">
+            <div class="p-img">
+              <img
+                src="img/portfolio/Lumbini.jpg"
+                alt=""
+                class="original-img"
+              />
             </div>
-          </footer>
-      
-          <script
-            type="module"
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-          ></script>
-          <script
-            nomodule
-            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-          ></script>
-      
-          <script src="js/script-common.js"></script>
-          <script src="js/script-index.js"></script>
-      
-    
-</body>
+            <div class="small-pad p-details">
+              <h3 class="original-h3">Lumbini, Nepal</h3>
+              <p class="original-p">from C$ 233</p>
+              <button
+                class="add-item"
+                id="redirect-btn"
+                onclick="addItem(this)"
+              >
+                Book &RightArrow;
+              </button>
+            </div>
+          </div>
+
+          <div class="place-container">
+            <div class="p-img">
+              <img
+                src="img/portfolio/haidan-IAwnp88Fz8Y-unsplash.jpg"
+                alt=""
+                class="original-img"
+              />
+            </div>
+            <div class="small-pad p-details">
+              <h3 class="original-h3">Mecca, Saudi Arabia</h3>
+              <p class="original-p">from C$ 233</p>
+              <button
+                class="add-item"
+                id="redirect-btn"
+                onclick="addItem(this)"
+              >
+                Book &RightArrow;
+              </button>
+            </div>
+          </div>
+
+          <div class="place-container">
+            <div class="p-img">
+              <img
+                src="img/portfolio/angkor wat.jpg"
+                alt=""
+                class="original-img"
+              />
+            </div>
+            <div class="small-pad p-details">
+              <h3 class="original-h3">Angkor Wat, Cambodia</h3>
+              <p class="original-p">from C$ 233</p>
+              <button
+                class="add-item"
+                id="redirect-btn"
+                onclick="addItem(this)"
+              >
+                Book &RightArrow;
+              </button>
+            </div>
+          </div>
+        </div>
+        <p class="see-all"><a href="html/abc.html">See all &rarr;</a></p>
+      </div>
+    </section>
+
+    <section class="feedback-section">
+      <form action="html/contact.html" id="feedback-form" method="POST">
+        <div class="feedback">
+          <h3 class="travel-p">Share your thoughts</h3>
+          <input
+            type="text"
+            name="feedback"
+            class="fd-place"
+            placeholder="Write a feedback"
+            required
+          />
+          <input type="submit" value="Send" class="submit" />
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Omnifood logo" src="img/logo.png" />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2024</span> by Air8848, Inc. All
+            rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a id="myPhoneLink" class="footer-link" href="tel:415-201-6370"
+                >415-201-6370</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@air8848.com.com"
+                >hello@air8848.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Us</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Flight partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Booking directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="js/script-common.js"></script>
+    <script src="js/script-index.js"></script>
+    <script>
+      /////////////////////////////// wishlist///////////////////////////////////
+      function addItem(button) {
+        // Get the parent place-container element of the clicked button
+        let placeContainer = button.closest(".place-container");
+
+        // Find the child elements within the clicked place-container
+        let originalH3 =
+          placeContainer.querySelector(".original-h3").textContent;
+        let originalP = placeContainer.querySelector(".original-p").textContent;
+        let originalImg = placeContainer
+          .querySelector(".original-img ")
+          .getAttribute("src");
+
+        // Store the data in local storage
+        localStorage.setItem("stored", originalH3);
+        localStorage.setItem("stored2", originalP);
+        localStorage.setItem("stored3", originalImg);
+
+        console.log(
+          "Data stored in local storage for place-container:",
+          placeContainer
+        );
+
+        // Redirect to wishlist.html
+        window.location.href = "wishlist.html";
+      }
+
+      function attachEventListeners() {
+        // Select all elements with the class "add-item"
+        let addButtons = document.querySelectorAll(".add-item");
+
+        // Iterate over each button and attach the event listener
+        addButtons.forEach(function (button) {
+          button.addEventListener("click", addItem);
+        });
+      }
+
+      // Call the function to attach event listeners when the page is loaded
+      window.addEventListener("load", attachEventListeners);
+    </script>
+  </body>
 </html>
