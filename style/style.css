@@ -225,7 +225,7 @@ html {
 
 }
 .category-img1{
-    background-image: url(img/nav-1.jpg);
+    background-image: url(../img/cultural.jpg);
 
 }
 .category-img2{
@@ -402,7 +402,7 @@ html {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px; */
 
-    background-image: url(img/hero.jpg);
+    background-image: url(../img/hero.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
